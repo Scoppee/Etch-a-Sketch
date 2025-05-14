@@ -8,6 +8,8 @@ function displayItem(number) {
         let item = document.createElement("div");
         item.setAttribute("class", "item");
         item.style["flex"] = `0 0 calc(100% / ${number})`
+        item.style["width"] = `${90/number}vw`
+        item.style["height"] = `${90/number}vw`
     
         item.addEventListener("mouseover", () => {
             let randomRGB = Math.floor(Math.random() * 256);
